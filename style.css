@@ -69,7 +69,7 @@ main h3 {
 }
 
 ul {
-    padding-top: -10px; /* Long padding */
+    padding-top: 5px; /* Long padding */
     padding: 0 0 0 20% /* Short padding */
 }
 
@@ -132,7 +132,7 @@ img:hover { /* Hover effect for images */
 
 .recordings {
     border: 2px solid black; /* Border for recordings */
-    background-color: black;
+    background-color: white;
     padding: 10px;
     border-radius: 10px;;
 
