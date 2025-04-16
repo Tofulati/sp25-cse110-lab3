@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+.bungee-spice-regular { /* Custom font styling */
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#topic {
+    background-color: black;
+    color: grey;
+}
+
+header { /* Absolute right positioning for header */
+    font-weight: bold;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    margin-right: 20px;
+}
+
+body {
+    position: absolute; /* Absolute center positioning for body */
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: fit-content;
+
+    background-color: rgb(59, 57, 57); /* Dark background */
+    color: white; /* Light text */
+    font-family: Helvetica, Arial, sans-serif; /* Font style */
+    font-size: 16px; /* Font size */
+}
+
+main { /* Relative positioning for main to center */
+    position: relative;
+    top: 50px;
+}
+
+main h1, h2 {
+    position: relative;
+    left: 0;    
+    right: 0;
+    margin-inline: auto;
+    width: fit-content;
+}
+
+.date { /* Date styling without border */
+    position: relative;
+    left: 0;    
+    right: 0;
+    margin-inline: auto;
+    width: fit-content;
+    border: none;
+    margin: -10px 0 -10px 40%; /* Short margin */
+}
+
+main h3 {
+    position: relative;
+    left: 0;    
+    right: 0;
+    margin-inline: auto;
+    width: fit-content;
+    border-bottom: 2px solid white; /* Border for h3 */
+    border-color: rgb(0, 0, 0); /* Border color */
+    margin-top: 40px; /* Long margin */
+}
+
+ul {
+    padding-top: -10px; /* Long padding */
+    padding: 0 0 0 20% /* Short padding */
+}
+
+ul:has(li:nth-child(2)) {
+    color: whitesmoke;
+}
+
+li:hover {
+    background-color: #222;
+    cursor: pointer;;
+}
+
+main ul li { /* Descendant Combinator */
+    list-style: square;
+}
+
+main > h3 { /* Child Combinator */
+    color: orange;
+}
+
+h3 ~ ul { /* General Sibling Combinator */
+    margin-bottom: 15px;
+}
+
+h2 + h3 { /* Adjacent Sibling Combinator */
+    color: orangered;
+}
+
+.diagrams{ /* Grid layout for diagrams */
+    display: grid;
+    grid-column: auto;
+    grid-row: auto;
+    grid-column: auto;
+}
+
+img { 
+    display: block; /* Block stylying for images */
+    margin-inline: auto;
+    padding: 10px;
+    height: 200px; /* Sizing */
+    width: 500px;
+}
+
+img[alt="Sample Diagram"] {
+    border: 2px black dashed;
+}
+
+img:hover { /* Hover effect for images */
+    transform: scale(1.1); /* Hover effect */
+    transition: all 0.3s ease-in-out; /* Transition effect */
+}
+
+.recordings { /* Flexbox layout for recordings */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 100px 0;
+}
+
+.recordings {
+    border: 2px solid black; /* Border for recordings */
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;;
+
+    audio {
+        margin-top: 10px;
+    }
+}
+
+footer { /* Absolute center positioning for footer */
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: fit-content;
+    padding: 10px;
+}
+
+@media (max-width: 320px) {
+    img {
+        width: 50%; /* Full width for images */
+        height: auto; /* Auto height for images */
+    }
+
+    body {
+        font-size: 12px; /* Smaller font size */
+    }
+}
+  

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample Team Braintstorming</title>
@@ -10,10 +12,10 @@
         Team #Sample, CSE 110
     </header>
     <main>
-        <h1>Sample Team Brainstorming</h1>
+        <h1 class="bungee-spice-regular">Sample Team Brainstorming</h1>
 
-        <h2>Brainstorming and Ideas</h2>
-        <h3>April 9th, 2025</h3>
+        <h2 id="topic">Brainstorming and Ideas</h2>
+        <h3 class="date">April 9th, 2025</h3>
         <br>
 
         <h3>Attendance</h3>
@@ -60,18 +62,22 @@
 
         <br>
         <h3>Diagrams</h3>  
-        <img src="./assets/image.png" alt="Sample Diagram" width="400" height="300">
-        <img src="./assets/smile.jpg" alt="Sample Group" width="400" height="300">
+        <div class="diagrams">
+            <img src="./assets/image.png" alt="Sample Diagram" width="400" height="300">
+            <img src="./assets/smile.jpg" alt="Sample Group" width="400" height="300">
+        </div>
 
         <h3>Recordings</h3>
-        <video controls="controls" width="500" height="300">
-            <source src="assets/video.mp4" type="video/mp4">
-            Your browser does not support the video element.
-        </video>
-        <audio controls="controls">
-            <source src="assets/audio.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+        <div class="recordings">
+            <video controls="controls" width="500" height="300">
+                <source src="assets/video.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+            <audio controls="controls">
+                <source src="assets/audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
         
     </main>
     <footer>
