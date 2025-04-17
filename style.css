@@ -17,8 +17,12 @@ header { /* Absolute right positioning for header */
     font-weight: bold;
     position: absolute;
     top: 30px;
-    right: 0;
+    left: 0;
     margin-right: 20px;
+}
+
+nav a {
+    color: black;
 }
 
 body {
@@ -36,7 +40,9 @@ body {
 
 main { /* Relative positioning for main to center */
     position: relative;
-    top: 50px;
+    margin-top: 300px;
+    margin-bottom: 10px;
+    padding: 0;
 }
 
 main h1, h2 {
@@ -65,12 +71,12 @@ main h3 {
     width: fit-content;
     border-bottom: 2px solid white; /* Border for h3 */
     border-color: rgb(0, 0, 0); /* Border color */
-    margin-top: 40px; /* Long margin */
+    margin-top: 20px; /* Long margin */
 }
 
 ul {
     padding-top: 5px; /* Long padding */
-    padding: 0 0 0 20% /* Short padding */
+    padding: 10px 10% 0 10% /* Short padding */
 }
 
 ul:has(li:nth-child(2)) {
@@ -79,15 +85,19 @@ ul:has(li:nth-child(2)) {
 
 li:hover {
     background-color: #222;
-    cursor: pointer;;
+    cursor: pointer;
 }
 
 main ul li { /* Descendant Combinator */
     list-style: square;
 }
 
-main > h3 { /* Child Combinator */
+#attendance, #agenda, #previous, #new, #forms, #questions, #diagrams, #recordings, #personal > h3 { /* Child Combinator */
     color: orange;
+}
+
+#forms p {
+    color: white;
 }
 
 h3 ~ ul { /* General Sibling Combinator */
@@ -141,6 +151,14 @@ img:hover { /* Hover effect for images */
     }
 }
 
+#forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
 footer { /* Absolute center positioning for footer */
     font-weight: bold;
     position: absolute;
@@ -148,7 +166,7 @@ footer { /* Absolute center positioning for footer */
     right: 0;
     margin-inline: auto;
     width: fit-content;
-    padding: 10px;
+    padding: 50px;
 }
 
 @media (max-width: 320px) {
